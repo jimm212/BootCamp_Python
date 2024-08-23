@@ -1,0 +1,109 @@
+body{
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+}
+
+#container{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 1230px;
+    width: 500px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#formulario_reserva{
+    text-align: left;
+    color:dodgerblue;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cuadro{
+    border-radius: 5px;
+    width: 460px;
+    height: 25px;
+    background-color:azure;
+    margin-top: 5px;
+}
+
+#telefono{
+    border-radius: 5px;
+    width: 425px;
+    height: 25px;
+    background-color:azure;
+    margin-top: 5px;
+}
+
+#Pelicula{
+    border-radius: 5px;
+    width: 465px;
+    height: 30px;
+    background-color:azure;
+    margin-top: 5px;
+}
+
+#cantidad{
+    border-radius: 5px;
+    width: 465px;
+    height: 30px;
+    background-color:rgb(52, 206, 206);
+    margin-top: 5px;
+}
+
+#fecha{
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    background-color:azure;
+    margin-top: 5px;
+}
+#hora{
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    background-color:azure;
+    margin-top: 5px;
+}
+
+#golosinas{
+    border-radius: 5px;
+    width: 250px;
+    height: 55px;
+    background-color:azure;
+    margin-top: -12px
+}
+
+.extras{
+    margin-top: 10px;
+}
+
+#metodo_pago{
+    border-radius: 5px;
+    width: 465px;
+    height: 40px;
+    background-color:azure;
+    margin-top: 10px;
+}
+
+#buttom{
+    border-radius: 5px;
+    width: 465px;
+    height: 50px;
+    background-color:rgb(255, 0, 0);
+    margin-top: 25px;
+    color: rgb(26, 26, 134);
+}
+#buttom:hover{
+    background-color: brown;
+    color:cornsilk;
+    border-color: chartreuse;
+}
+
+small{
+    text-indent: 50px;
+}
