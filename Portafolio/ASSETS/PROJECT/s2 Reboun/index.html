@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form id="Formulario_Atencion" action="gracias.html" method="post">
+    
+        <!--NOMBRE-->
+        <label for="nombre">NOMBRE</label> <br>
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+
+        <!--DIRECCION-->
+        <label for="direccion">DIRECCION</label> <br>
+        <input type="text" name="direccion" id="direccion">
+        <br><br>
+
+        <!--ESPECIALIDAD-->
+        <label for="especialidad" id="especialidad">ESPECIALIDAD</label> <br>
+        <select type="text" id="especialidad" name="especialidad">
+            <option value="Selecciona">Selecciona una Especialidad</option>
+            <option value="1">MEDICINA INTERNA</option>
+            <option value="2">MEDICINA GENERAL</option>
+            <option value="3">TRAUMATOLOGIA</option>
+            <option value="4">NUTRICIONISTA</option>
+        </select>
+        <br><br>
+
+        <!--FECHA-->
+        <label for="fecha" id="fecha">FECHA</label> <br>
+        <input type="date" id="fecha" name="fecha">
+        <br><br> 
+
+        <!--HORA-->
+        <label for="hora" id="hora">HORA</label> <br>
+        <input type="time" name="hora" id="hora">
+        <br><br>
+
+        <!--CORREO-->
+        <label for="email">CORREO</label> <br>
+        <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" required>
+        <br><br>
+
+        <!-- BOTON -->
+        <button type ="submit">CONFIRMAR</button>
+
+    </form>
+
+
+</body>
+</html>
