@@ -1,0 +1,33 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.colorbarra{
+    color: white;
+}
+.boton{
+    background-color: #FFFFFF33;
+    border:none;
+    color: white;
+    height: auto;
+    width: 125px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+.estilos{
+    color: #051B54;
+    font-size: 20px;
+}
+.card1{
+    background-color: #62DAD3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.img1{
+    max-width:45%;
+    height: auto;
+}
+
+.form{
+    border-radius: 10px;
+}

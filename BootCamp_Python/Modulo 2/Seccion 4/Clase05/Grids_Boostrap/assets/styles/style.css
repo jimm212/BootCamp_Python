@@ -1,0 +1,55 @@
+/* Contenedor principal */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Filas */
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px; /* Espacio entre columnas */
+}
+
+/* Columnas */
+[class*="col-"] {
+    padding: 15px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* Tamaños de columnas en diferentes puntos de quiebre */
+
+/* Extra large devices (≥1200px) */
+.col-xl-12 {
+    grid-column: span 12;
+}
+
+.col-xl-6 {
+    grid-column: span 6;
+}
+
+.col-xl-4 {
+    grid-column: span 4;
+}
+
+/* Medium devices (≥768px) */
+@media (max-width: 1199px) {
+    .col-md-12 {
+        grid-column: span 12;
+    }
+
+    .col-md-6 {
+        grid-column: span 6;
+    }
+}
+
+/* Small devices (<768px) */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        grid-column: span 12;
+    }
+}

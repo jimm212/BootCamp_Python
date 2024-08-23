@@ -1,0 +1,120 @@
+[21:25] Yaneth Moreno
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cajas de colores y botón</title>
+
+    <style>
+
+        /* Estilos CSS */
+
+        body {
+
+            font-family: sans-serif;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            height: 100vh;
+
+            margin: 0;
+
+        }
+ 
+        .caja {
+
+            width: 100px;
+
+            height: 100px;
+
+            margin: 10px;
+
+            border: 1px solid black;
+
+            text-align: center;
+
+            line-height: 100px;
+
+        }
+ 
+        .caja-roja {
+
+            background-color: red;
+
+        }
+ 
+        .caja-verde {
+
+            background-color: green;
+
+        }
+ 
+        .caja-azul {
+
+            background-color: blue;
+
+        }
+ 
+        .boton {
+
+            padding: 10px 20px;
+
+            background-color: #4CAF50;
+
+            color: white;
+
+            border: none;
+
+            cursor: pointer;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Cajas de colores</h1>
+ 
+    <div class="caja caja-roja">Rojo</div>
+
+    <div class="caja caja-verde">Verde</div>
+
+    <div class="caja caja-azul">Azul</div>
+ 
+    <button class="boton" onclick="cambiarColor()">Cambiar color</button>
+ 
+    <script>
+
+        function cambiarColor() {
+
+            const cajas = document.querySelectorAll(".caja");
+ 
+            for (let i = 0; i < cajas.length; i++) {
+
+                let colorAleatorio = Math.floor(Math.random() * 16777215);
+
+                cajas[i].style.backgroundColor = "#" + colorAleatorio.toString(16);
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

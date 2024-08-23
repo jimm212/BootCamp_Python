@@ -1,0 +1,84 @@
+/* Media Queries */
+
+/* @media tipo_de_media and/or caracteristica_de_media {
+    Estilos CSS para aplicar 
+}
+ */
+
+/* @media screen and (max-width: 480px) {
+    body {
+      font-size: 16px; 
+    }
+  } */
+
+/*  @media screen and (max-width: 768px) and (orientation: portrait) and (resolution: 2dpi) {
+    .sidebar {
+      display: none; 
+    }
+  } 
+*/
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+/* 1em --> aprox 16px 0*/
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1em;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Media query para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 0.5em 0;
+    }
+
+    .content {
+        padding: 0 1em;
+    }
+}
+
+/* Media query para dispositivos con un ancho mínimo de 601px y máximo de 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 0 2em;
+    }
+}
+
+/* Media query para dispositivos con un ancho mínimo de 1025px */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 0 3em;
+    }
+}

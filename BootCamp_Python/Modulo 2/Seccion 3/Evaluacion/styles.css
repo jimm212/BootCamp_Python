@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+}
+
+.primary-btn{
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    width: 125px;
+    height: 30px;
+    border-style:inherit;
+}
+
+.secondary-btn{
+    color: #fff;
+    background-color: #2ecc71;
+    border-radius: 5px;
+    width: 125px;
+    height: 30px;
+    border-style:inherit;
+}
+.success-btn{
+    color: #fff;
+    background-color: #27ae60;
+    border-radius: 5px;
+    width: 125px;
+    height: 30px;
+    border-style:inherit;
+}
+
+.danger-btn{
+    color: #fff;
+    background-color:#e74c3c;
+    border-radius: 5px;
+    width: 125px;
+    height: 30px;
+    border-style:inherit;
+}

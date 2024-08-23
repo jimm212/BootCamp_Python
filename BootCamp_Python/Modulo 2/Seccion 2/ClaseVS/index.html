@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas CINE</title>
+</head>
+<body>
+    <header>
+        <h1 style="color: blue;font-family: 'Times New Roman', Times, serif;"> Reservas de Entradas al Cine</h1>
+    </header>
+
+    <form id="formulario_reserva" action="agradecimiento.html" method="get">
+        <!-- Nombre y Apellido -->
+        <label for="nombre">NOMBRE:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br><br>
+
+        <!-- CORREO    -->
+        <label for="correo" id="correo">CORREO:</label>
+        <input type="email" id="correo" name="correo" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" 
+        value="jm@gmail.com"  required>
+        <br><br>
+
+        <!-- TELEFONO    -->
+        <label for="telefono" id="telefono">Telefono:</label>
+        +56 <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" 
+        value="123456789" required>
+        <small>Formato: 9 digitos </small>
+        <br><br>
+
+        <!-- PELICULA -->
+        <label for="lista" id="pelicula">Seleccionar Pelicula</label>
+        <select type="text" id="Pelicula" name="peliculas">
+            <option value="Selecciona">Selecciona una pelicula</option>
+            <option value="1">Pelicula 1</option>
+            <option value="2">pelicula 2</option>
+            <option value="3">pelicula3 </option>
+        </select>
+        <br><br>
+        <!-- FUNCION -->
+        <label >Selecciona la Funcion:</label> <br>
+        <input type="radio" name="f1" id="f1" value="Mañana">
+        <label for="f1">Mañana</label><br>
+        <input type="radio" name="f2" id="f2" value="Tarde">
+        <label for="f2">Tarde</label><br>
+        <input type="radio" name="f3" id="f3" value="Noche">
+        <label for="f3">Noche</label><br>
+        <br><br>
+        <!-- CANTIDAD DE ENTRADAS -->
+        <label for="cantidad">Cantidad de Entradas</label> <br>
+        <input type="range"  min="1" max="10" step="" value="1" id="cantidad" name="cantidad" list="cant_entradas">
+        <datalist id="cant_entradas">
+            <!--option[value="$"]*10{$}-->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </datalist>
+        <output for="cantidad"></output>
+        <br><br>
+
+        <!-- FECHA DE RESERVA -->
+        <label for="fecha" id="fecha">Fecha de Reserva:</label>
+        <input type="date" id="fecha" name="fechareserva" pattern="">
+        <br><br>
+
+        <!-- HORA DE RESERVA -->
+        <label for="hora" id="hora">Hora de Reserva: </label>
+        <input type="time" id="hora">
+        <br><br>
+
+        <!-- GOLOSINAS -->
+        <label for="golosinas">Golosinas:</label> <br><br>
+        <select name="golosinas" id="golosinas" multiple size="5">
+            <option value="1">Galletas</option>
+            <option value="2">Palomitas</option>
+            <option value="3">Papas Fritas</option>
+            <option value="4">Bebidas</option>
+            <option value="5">Otros</option>
+        </select>
+        <br><br>
+
+        <!-- EXTRAS-->
+        <label for="extras">Extras</label> <br>
+        <input type="checkbox" name="VIP" id="extras"><small>VIP</small> <br>
+        <input type="checkbox" name="Lentes 3D" id="extras"><small>Lentes 3D</small> <br>
+        <input type="checkbox" name="POSTER" id="extras"><small>Poster</small> <br>
+        <br><br>
+
+        <!-- METODO DE PAGO -->
+        <label for="metodo_pago" id="metodo_pago">Metodo de Pago:</label>
+        <select type="text" id="metodo_pago" name="metodo_pago">
+            <option value="Selecciona">Selecciona un metodo de pago</option>
+            <option value="1">Debito</option>
+            <option value="2">Credito</option>
+            <option value="3">Efectivo a retirar en Caja</option>
+        </select>
+        <br><br>
+        <!-- -->
+
+        <!-- BOTON -->
+        <button type ="submit">ENVIAR RESERVA</button>
+    </form>
+    
+    
+</body>
+</html>

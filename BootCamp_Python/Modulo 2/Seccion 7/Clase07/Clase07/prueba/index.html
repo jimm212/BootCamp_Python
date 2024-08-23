@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Primera forma de incorporar JS en HTML</h2>
+
+    <!--Forma Inline de trabajar con JS desde HTML-->
+    <button onclick="alert('¡Hola, Mundo!')">Haz clic aquí</button>
+
+    <h2>Segunda Forma de incorporar JS en HTML</h2>
+    <!--Forma Interna de trabajar con JS desde HTML-->
+    <button id="miBoton">Haz clic aquí</button>
+    <script>
+        document.getElementById("miBoton").addEventListener("click", function() {
+            alert("¡Hola, Mundo!");
+        });
+    </script>
+
+    <h2>Tercera Forma de incorporar JS en HTML</h2>
+    <!--Forma Externa de trabajar con JS desde HTML-->
+    <button id="miBoton1">Haz clic aqui</button>
+    <!--<button id="miBoton">Haz clic aquí</button>-->
+
+</body>
+</html>
